@@ -1,0 +1,46 @@
+.wdc_calendar {
+  font-family: $font-family-primary;
+}
+
+
+/*Month Section*/
+
+.wdc_calendar, .calyear_table td, .calyear_table td span, .week_days b,
+.cal_event p, p{
+  font-family: $font-family-primary!important;
+}
+
+.cal_event p{font-size:$font-l!important;
+  text-align:center!important;
+  color:$color-black!important;
+}
+
+
+
+/*List Section*/
+
+.Wednesday span, .Sunday span, b, td, {
+  font-family: $font-family-primary!important;
+}
+
+/*Week Section*/
+
+.Monday span, .Tuesday span, .Thursday span, .Friday
+span .Saturday span   {
+  font-family: $font-family-primary!important;
+}
+
+/*Day Section*/
+
+p {
+  color:$color-black!important;
+}
+
+/*Whole table Centred*/
+
+table{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

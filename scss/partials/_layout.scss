@@ -1,0 +1,80 @@
+html {
+  font-family: $font-family-primary;
+  font-size: $font-s;
+  font-weight: $font-regular;
+  max-width: 100%;
+}
+body {
+  font-family: $font-family-primary;
+  font-size: $font-s;
+  font-weight: $font-regular;
+  max-width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: $color-black;
+}
+section {
+  width: 100%;
+  float: left;
+  clear:both;
+  animation-duration: 2s;
+  @extend .animated;
+  @extend .fadeIn;
+  &:nth-child(2n) {
+    background-color: $color-offwhite;
+  }
+  &:nth-child(1) {
+    animation-delay: 0ms;
+  }
+  &:nth-child(2) {
+    animation-delay: 100ms;
+  }
+  &:nth-child(3) {
+    animation-delay: 200ms;
+  }
+  &:nth-child(4) {
+    animation-delay: 300ms;
+  }
+  &:nth-child(5) {
+    animation-delay: 400ms;
+  }
+}
+.content {
+  width: $screen-wide;
+  margin: auto;
+}
+
+.section-break {
+  background: #f2f2f2;
+  text-align: center;
+  line-height: 30px;
+  font-size: 11px;
+}
+
+.upper-margin {
+  margin-top: 30px;
+}
+
+.page-content {
+  width: 1090px;
+  margin: auto;
+  float: none;
+  padding: 30px 0px 30px 0px;
+  @include box-sizing(border);
+  @include max-screen($screen-large) {
+    width: 100%;
+    float: left;
+    padding: 30px 20px 30px 20px;
+    @include box-sizing(border);
+  }
+}
+
+#wpadminbar {
+  @include max-screen($screen-large) {
+    display: none;
+  }
+}
+
+.row {
+  clear:both;
+}

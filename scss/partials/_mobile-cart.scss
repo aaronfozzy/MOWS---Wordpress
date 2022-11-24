@@ -1,0 +1,17 @@
+.mobile-cart {
+  width: 100%;
+  float: left;
+  clear:both;
+  background-color: darken($color-teal, 5%);
+  color: $color-white;
+  display: none;
+  a {
+    color: $color-white;
+    float: right;
+    padding: 10px 20px 10px 20px;
+    @include box-sizing(border);
+  }
+  @include max-screen($screen-medium){
+    display: block;
+  }
+}

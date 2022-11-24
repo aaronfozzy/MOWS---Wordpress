@@ -1,0 +1,16 @@
+.mows-venue-1 {
+  width: 100%;
+  float: left;
+  clear:both;
+  background-size: cover;
+  background-position: center center;
+  .inner-holder {
+    width: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 30px 0px 30px 0px;
+    iframe {
+      width: 100%;
+    }
+  }
+}

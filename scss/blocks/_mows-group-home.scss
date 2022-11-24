@@ -1,0 +1,364 @@
+section.hero-section {
+  width: 100%;
+  height: 700px;
+  float: left;
+  clear:both;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  @include max-screen($screen-large) {
+    @include box-sizing(border);
+    height: auto;
+  }
+  @include max-screen($screen-medium) {
+    @include box-sizing(border);
+    height: auto;
+  }
+  .inner-section {
+    width: 1140px;
+    margin: auto;
+    @include max-screen($screen-large) {
+      width: 100%;
+      float: left;
+      @include box-sizing(border);
+    }
+  }
+  ul {
+    width: 100%;
+    float: left;
+    clear:both;
+    list-style: none;
+    margin-left: 30px;
+    @include max-screen($screen-large) {
+      margin-left: 0px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    li {
+      width: 342px;
+      float: left;
+      padding: 25px 45px 45px 45px;
+      text-align: center;
+      margin: 0px 20px 0px 0px;
+      &:before {
+        display: none;
+      }
+      @include box-sizing(border);
+      @include max-screen($screen-medium) {
+        @include calc(width, "50% - 20px");
+        margin-bottom: 20px;
+        margin-top: 0px;
+      }
+      @include max-screen($screen-small) {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 0px;
+      }
+
+      &.lake-district-block, &.manchester-block {
+        background-color: rgba(255,255,255,0.9);
+        height: 435px;
+        position: relative;
+        h2 {
+          width: 100%;
+          float: left;
+          clear:both;
+          font-size: 32px;
+          font-weight: $font-bold;
+          text-transform: capitalize;
+          line-height: normal;
+        }
+        h3 {
+          width: 100%;
+          float: left;
+          clear:both;
+          font-size: 18px;
+          font-weight: $font-light;
+          text-transform: uppercase;
+          line-height: normal;
+          margin: 0px;
+          letter-spacing: 0px;
+        }
+        iframe {
+          width: 300px;
+          float: left;
+          clear:both;
+          margin-top: 10px;
+          position: absolute;
+          top: 113px;
+          left: 20px;
+        }
+        .opening-times {
+          width: 100%;
+          float: left;
+          clear:both;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          h4 {
+            width: 100%;
+            float: left;
+            clear:both;
+            font-size: 22px;
+            line-height: normal;
+            color: $second-color;
+            letter-spacing: 0px;
+            font-weight: $font-medium;
+            margin-top: 20px;
+          }
+          p {
+            width: 100%;
+            float: left;
+            clear: both;
+            font-size: 17px;
+            color: $color-black;
+            margin: 5px 0px 0px 0px;
+            letter-spacing: 0px;
+          }
+        }
+        .buttons-holder {
+          width: 100%;
+          max-width: 300px;
+          float: left;
+          clear:both;
+          margin-top: 56px;
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          @include box-sizing(border);
+          a {
+            width: 100%;
+            float: left;
+            clear:both;
+            padding: 10px 20px 10px 20px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 3px;
+            @include box-sizing(border);
+            &.light {
+              border: 2px solid $second-color;
+              color: $second-color;
+              background-color: transparent;
+              margin-bottom: 20px;
+            }
+            &.dark {
+              border: 2px solid $first-color;
+              background-color: $first-color;
+              color: white;
+            }
+          }
+        }
+      }
+      &.lake-district-block {
+        h3 {
+          position: relative;
+          top: -10px;
+        }
+      }
+      &.manchester-block {
+        float: left;
+        .opening-times {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          h4 {
+            margin-top: 0px;
+          }
+        }
+      }
+      &.membership-block {
+        background-color: rgba(34,70,135,0.9);
+        height: 210px;
+        h2 {
+          width: 100%;
+          float: left;
+          clear:both;
+          font-size: 32px;
+          font-weight: $font-bold;
+          text-transform: capitalize;
+          line-height: normal;
+          color: white;
+        }
+        h3 {
+          width: 100%;
+          float: left;
+          clear:both;
+          font-size: 18px;
+          font-weight: $font-light;
+          text-transform: uppercase;
+          line-height: normal;
+          margin: 0px;
+          color: white;
+          letter-spacing: 0px;
+        }
+        .opening-times {
+          width: 100%;
+          float: left;
+          clear:both;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          h4 {
+            width: 100%;
+            float: left;
+            clear:both;
+            font-size: 22px;
+            line-height: normal;
+            color: $second-color;
+            letter-spacing: 0px;
+            font-weight: $font-medium;
+            margin-top: 20px;
+          }
+          p {
+            width: 100%;
+            float: left;
+            clear: both;
+            font-size: 17px;
+            color: $color-black;
+            margin: 5px 0px 0px 0px;
+            letter-spacing: 0px;
+          }
+        }
+        .buttons-holder {
+          width: 100%;
+          float: left;
+          clear:both;
+          margin-top: 20px;
+          a {
+            width: 100%;
+            float: left;
+            clear:both;
+            padding: 10px 20px 10px 20px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 3px;
+            @include box-sizing(border);
+            border: 2px solid white;
+            background-color: $second-color;
+            color: white;
+          }
+        }
+      }
+      &.important-info-block {
+        @include calc(width, "100% - 74px");
+        float: left;
+        clear:both;
+        background-color: rgba(34,70,135,0.9);
+        padding: 20px;
+        margin-top: 20px;
+        @include box-sizing(border);
+        @include max-screen($screen-large) {
+          width: 100%;
+        }
+        .leftcol, .rightcol {
+          width: 100%;
+          float: left;
+          margin-right: 20px;
+          h2 {
+            width: 100%;
+            float: left;
+            clear:both;
+            color: $color-white;
+            font-size: $font-ml;
+            font-weight: $font-bold;
+            margin: 0px;
+            padding: 0px;
+            text-align: left;
+          }
+          p {
+            width: 100%;
+            float: left;
+            clear:both;
+            color: $color-white!important;
+            font-size: $font-ms;
+            font-weight: $font-regular;
+            text-align: left;
+            margin: 0px;
+            padding: 0px;
+          }
+        }
+      }
+
+      &.wetsuits-block {
+        background-color: rgba(0,0,0,0.7);
+        height: 205px;
+        margin-top: 20px;
+        @include max-screen($screen-medium) {
+          margin-top: 0px;
+        }
+        h2 {
+          width: 100%;
+          float: left;
+          clear:both;
+          font-size: 32px;
+          font-weight: $font-bold;
+          text-transform: capitalize;
+          line-height: normal;
+          color: white;
+        }
+        h3 {
+          width: 100%;
+          float: left;
+          clear:both;
+          font-size: 16px;
+          font-weight: $font-regular;
+          text-transform: uppercase;
+          line-height: normal;
+          letter-spacing: 0px;
+          margin: 0px;
+          color: white;
+        }
+        .opening-times {
+          width: 100%;
+          float: left;
+          clear:both;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          h4 {
+            width: 100%;
+            float: left;
+            clear:both;
+            font-size: 18px;
+            line-height: normal;
+            color: $second-color;
+            letter-spacing: 0px;
+            font-weight: $font-medium;
+            margin-top: 20px;
+          }
+          p {
+            width: 100%;
+            float: left;
+            clear: both;
+            font-size: 17px;
+            color: $color-black;
+            margin: 5px 0px 0px 0px;
+            letter-spacing: 0px;
+          }
+        }
+        .buttons-holder {
+          width: 100%;
+          float: left;
+          clear:both;
+          margin-top: 20px;
+          a {
+            width: 100%;
+            float: left;
+            padding: 10px 20px 10px 20px;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 3px;
+            @include box-sizing(border);
+            border: 2px solid white;
+            background-color: $first-color;
+            color: white;
+            &:nth-child(1) {
+              margin-right: 5px;
+            }
+            &:nth-child(2) {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

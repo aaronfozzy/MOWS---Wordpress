@@ -1,0 +1,13 @@
+#searchform {
+  width: 100%;
+  float: left;
+  .form-control {
+    width: 100%;
+    float: left;
+  }
+  .input-group-control {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+  }
+}

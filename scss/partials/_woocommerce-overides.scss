@@ -1,0 +1,13 @@
+.woocommerce-billing-fields .form-row, .woocommerce-shipping-fields .form-row {
+	display: block;
+}
+
+.woocommerce{
+  .col-1, .col-2{
+  max-width:none;
+  }
+}
+
+.form-row {
+    display: inherit;
+}

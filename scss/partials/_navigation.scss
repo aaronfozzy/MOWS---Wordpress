@@ -1,0 +1,274 @@
+.menu-standard-desktop-menu-container {
+  width: 100%;
+  #menu-standard-desktop-menu {
+    width: 100%;
+    float: left;
+    clear:both;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    li {
+      width: auto;
+      color: $color-white;
+      font-weight: $font-bold;
+      float: left;
+      margin-right: 20px;
+      margin-bottom: 0px;
+      position: relative;
+      a {
+        width: auto;
+        float: left;
+        color: $color-white!important;
+        padding: 10px 0px 10px 0px;
+      }
+      ul {
+        display: none;
+        width: 200px;
+        position: absolute;
+        top: 44px;
+        left: 0px;
+        z-index: 2000;
+        background-color: $color-white;
+        li {
+          width: 100%;
+          float: left;
+          clear:both;
+          a {
+            color: $color-black!important;
+            padding: 10px 10px 10px 10px;
+            @include box-sizing(border);
+          }
+        }
+      }
+      &:hover ul {
+        display: block;
+      }
+    }
+  }
+}
+
+.my-account-menu-mows {
+  float: right;
+  clear:both;
+  text-decoration: none;
+  ul {
+    @extend .my-account-menu-mows;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    li {
+      @extend .my-account-menu-mows;
+      float: right;
+      position: relative;
+      margin: 0px;
+      a {
+        @extend .my-account-menu-mows;
+        background-color: darken($color-blue, 10%);
+        color: $color-white;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        font-size: 14px;
+        @include box-sizing(border);
+      }
+      ul {
+        width: 100%;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        background-color: lighten($color-blue, 10%);
+        z-index: 2000;
+        display: none;
+        li {
+          width: 100%;
+          float: left;
+          clear:both;
+          a {
+            width: 100%;
+            float: left;
+            clear:both;
+            padding: 10px 10px 10px 10px;
+            text-align: left;
+            color: $color-white;
+            font-weight: $font-medium;
+            text-decoration: none;
+            @include box-sizing(border);
+          }
+        }
+      }
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.cart-woo, {
+  float: right;
+  text-decoration: none;
+  ul {
+    @extend .my-account-menu-mows;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    li {
+      @extend .my-account-menu-mows;
+      float: right;
+      position: relative;
+      a {
+        @extend .my-account-menu-mows;
+        background-color: lighten($color-blue, 5%);
+        color: $color-white;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        font-size: 14px;
+        text-decoration: none;
+        @include box-sizing(border);
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  background-color: $color-offwhite;
+  a.dropdown-item {
+    color: $color-black;
+    font-size: $font-xs;
+    &.hover, &:hover {
+      background-color: darken($color-offwhite, 5%);
+    }
+    &.active, &:active {
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+}
+
+.top-nav-section {
+  width: 100%;
+  float: left;
+  padding: 15px 0px 15px 0px;
+  background-color: $first-color;
+  .form-group {
+    margin-bottom: 0px;
+  }
+  .header-action-button {
+    cursor: pointer;
+  }
+  .icon-account {
+    @include use-sprite(account-icon);
+  }
+  .icon-wishlist {
+    @include use-sprite(wishlist-icon);
+  }
+  .icon-basket {
+    @include use-sprite(basket-icon);
+  }
+}
+
+.actual-nav-menu {
+  background-color: $first-color;
+  .navbar {
+    padding: 0px;
+    .navbar-nav {
+      width: 100%;
+      padding: 5px 0px 5px 0px;
+      .nav-item {
+        padding: 0px;
+        margin: 0px 30px 0px 0px;
+        margin-bottom: 0px;
+        .nav-link {
+          padding: 0px;
+          margin: 0px;
+          font-size: $font-s;
+          font-weight: $font-bold;
+        }
+        &.highlighted {
+          .nav-link {
+            color: $second-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.usp-section {
+  width: 100%;
+  background-color: $color-white;
+  padding: 0px;
+  @include box-sizing(border);
+  .icon {
+    float: left;
+    clear:both;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .personal-service-icon {
+    @include use-sprite(personal-service-icon);
+
+  }
+  .free-delivery-icon {
+    @include use-sprite(free-delivery-icon);
+
+  }
+  .worldwide-delivery-icon {
+    @include use-sprite(worldwide-delivery-icon);
+
+  }
+  .returns-icon {
+    @include use-sprite(returns-icon);
+
+  }
+  .item {
+    padding: 15px 0px 11px 0px;
+    a {
+      text-decoration: none;
+      .icon {
+        border-bottom: 0px;
+      }
+      .title {
+        @include calc(width, "100% - 60px");
+        float: left;
+        font-size: $font-xs;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: none;
+      }
+      .desc {
+        float: left;
+        font-size: $font-xs;
+        font-weight: $font-regular;
+        text-decoration: none;
+        border-bottom: none;
+      }
+    }
+    &:hover {
+      .title {
+        color: $second-color;
+      }
+    }
+  }
+  .phone-usp {
+    min-width: 200px;
+    min-height: 50px;
+    background-color: $second-color;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    text-decoration: none;
+    border-bottom: none;
+    .number {
+      text-align: center;
+      color: $color-white;
+      font-weight: $font-bold;
+      text-decoration: none;
+      border-bottom: none;
+    }
+    &:hover {
+      background-color: lighten($second-color, 5%);
+    }
+  }
+
+}

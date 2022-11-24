@@ -1,0 +1,38 @@
+.water-temperatures {
+  width: 100%;
+  float: left;
+  clear:both;
+  ul {
+    width: 100%;
+    float: left;
+    clear:both;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    li {
+      width: auto;
+      float: left;
+      margin-right: 15px;
+      .venue-label {
+        width: 100%;
+        clear:both;
+        font-size: $font-xs;
+        font-weight: $font-medium;
+        text-transform: uppercase;
+        color: $color-white;
+        text-align: center;
+      }
+      .venue-temp {
+        width: 100%;
+        clear:both;
+        font-size: $font-m;
+        font-weight: $font-black;
+        color: $color-white;
+        text-align: center;
+      }
+    }
+  }
+  @include max-screen($screen-large) {
+    display: none;
+  }
+}

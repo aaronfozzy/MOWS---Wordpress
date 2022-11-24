@@ -1,0 +1,87 @@
+.bottom-bar {
+  width: 100%;
+  max-height: 41px;
+  float: left;
+  clear:both;
+  background-color: $color-blue;
+  text-align:center;
+  display: none;
+  .inner-holder {
+    width: 1060px;
+    margin: auto;
+    .content {
+      width: 70%;
+      float:left;
+      clear:both;
+      color: $color-white;
+      font-weight: $font-bold;
+      text-align: left;
+      padding: 10px 0px 10px 0px;
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    @include max-screen($screen-large) {
+      width: 100%;
+      float: left;
+      padding: 0px 20px 0px 20px;
+      @include box-sizing(border);
+    }
+  }
+  .account-cart {
+    width: 30%;
+    float: right;
+  }
+}
+
+.bottom-bar-1 {
+  width: 100%;
+  max-height: 41px;
+  float: left;
+  clear:both;
+  background-color: $color-blue;
+  text-align:center;
+  display: none;
+  .inner-holder {
+    width: 1060px;
+    margin: auto;
+    .content {
+      width: 70%;
+      float:left;
+      clear:both;
+      color: $color-white;
+      font-weight: $font-bold;
+      text-align: left;
+      padding: 10px 0px 10px 0px;
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    @include max-screen($screen-large) {
+      width: 100%;
+      float: left;
+      padding: 0px 20px 0px 20px;
+      @include box-sizing(border);
+    }
+  }
+  .account-cart {
+    width: 30%;
+    float: right;
+  }
+}
+
+.current-site-3 {
+  .bottom-bar-1 {
+    display: block;
+  }
+}
+.current-site-1, .current-site-2{
+  .bottom-bar {
+    display: block;
+    @include max-screen($screen-large) {
+      display: none;
+    }
+  }
+}

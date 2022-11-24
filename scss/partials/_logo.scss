@@ -1,0 +1,8 @@
+.logo {
+  @include use-sprite(logo);
+  margin-top: 5px;
+  @include max-screen($screen-medium){
+    @include use-sprite(logo-small);
+    margin-top: 5px;
+  }
+}

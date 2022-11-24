@@ -1,0 +1,37 @@
+.get-in-touch {
+  width: 200px;
+  float: right;
+  clear: both;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  @include box-sizing(border);
+  .label {
+    float: left;
+    color: $color-white;
+    font-weight: $font-bold;
+    margin-right: 20px;
+  }
+  .email {
+    width: 30px;
+    float: left;
+    margin-right: 20px;
+    a {
+      @include use-sprite(get-in-touch-email);
+      display: block;
+      float: left;
+    }
+  }
+  .facebook {
+    width: 30px;
+    float: left;
+    a {
+      @include use-sprite(get-in-touch-facebook);
+      display: block;
+      float: left;
+    }
+  }
+  @include max-screen($screen-large) {
+    display: none;
+  }
+}

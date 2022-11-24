@@ -1,0 +1,67 @@
+.account-navigation {
+  width: 1060px;
+  margin: 0px auto 0px auto;
+  clear:both;
+  ul {
+    width: 100%;
+    float: left;
+    clear:both;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    margin-top: 20px;
+    li {
+      min-width: 150px;
+      margin-right: 10px;
+      text-decoration: none;
+      a {
+        width: 100%;
+        float: left;
+        clear:both;
+        padding: 20px 20px 20px 20px;
+        background-color: $color-lgrey;
+        text-decoration: none;
+        .label {
+          width: 100%;
+          float: left;
+          clear:both;
+          text-align: center;
+          color: white;
+          text-decoration: none;
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      &.active {
+        a {
+          background-color: $color-teal;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.my-account-heading {
+  width: 1050px;
+  margin: auto;
+  padding-top: 30px;
+  clear:both;
+}
+
+#pmpro_account {
+  border: none;
+  .pmpro_table {
+    width: 100%;
+    display:table;
+    margin-top: 10px;
+    thead {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+    th, td {
+      padding: 5px 10px;
+    }
+  }
+}
